@@ -1,0 +1,42 @@
+    
+<br>
+<br>
+    <p>Presiona jugar para lanzar la moneda.</p>
+    <p>Pulsa q para parar la moneda del jugador 1 y p para la moneda del jugador 2</p>
+
+    <button id="start_btn">Jugar</button><br><br>
+        <div>
+          <h4 id="display"></h4>
+        </div>
+        
+    <table class="table">
+      <tr id="player1">
+        <td id="player1"><strong>Jugador 1</strong></td>
+        <td class="td_game active" id="0"></td>
+        <% 100.times do |num| %>
+         <td class="td_game" id="<%=num + 1 %>" ></td>
+        <% end %>
+        <td class="meta"></td>  
+         <% 5.times do %>
+         <td></td>
+        <% end %>
+      </tr>
+
+      <tr id="player2">
+        <td id="player2"><strong>Jugador 2</strong></td>
+        <td class="td_game active" id="0"></td>
+        <% 100.times do |num| %>
+          <td class="td_game" id="<%=num + 1 %>"></td>
+        <% end %>
+        <td class="meta"></td>  
+          <% 5.times do %>
+          <td></td>
+        <% end %>
+      </tr>
+</table>
+
+<div id="link">
+  <%= erb :_link, layout: false %>
+</div>    
+
+

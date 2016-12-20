@@ -1,0 +1,13 @@
+<header>
+  <img src="/img/codea-logo.png" id="logo">
+</header>
+
+<h1 id="main-title">¡RAYUELA!</h1>
+<h4>Este es el resultado de la ronda </h4>
+<br>
+<p><%= @round_result[0]%> : <%= @round_result[1]%> puntos</p>
+<p><%= @round_result[2]%> : <%= @round_result[3]%> puntos</p>
+<br>
+<h4>Ganador: <%= @round_result[4]%> </h4>
+<br>
+<a href="/restart/<%= @round_result[0]%>/<%= @round_result[2]%>">  Regresar </a>

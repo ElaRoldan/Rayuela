@@ -1,0 +1,22 @@
+<header>
+  <img src="/img/codea-logo.png" id="logo">
+</header>
+
+<h1 id="main-title">¡RAYUELA!</h1>
+
+
+ <form id="log" action="/log" method="post">
+    <label> Introduce nombre del jugador 1: </label>
+    <br>
+    <input type="text" name="player1" value="<%= @player1 %>">
+     <br>
+     <br>
+     <label> Introduce nombre del jugador 2: </label>
+    <br>
+    <input type="text" name="player2" value="<%= @player2 %>">
+     <br>
+     <br>
+    <input type="submit" value="Lets Play">
+  </form> 
+
+ <div id="game"></div>
